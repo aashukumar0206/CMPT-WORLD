@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040303;
+    user-select: none;
+    color: #fff;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: rgb(147, 146, 146);
+}
+
+.container {
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+:is(:link, ul li) {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 12px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 2s;
+    font-size: 900;
+    color: #fff;
+}
+
+.first-sec {
+    background-color: #080808;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list:hover {
+    color: #050505;
+    background-color: #fff;
+}
+
+.list::after {
+    content: '';
+    height: 100%;
+    width: 0%;
+    display: block;
+    background-color: #080808;
+    height: 2px;
+    transition: all 1s;
+}
+
+.list:hover::after {
+    width: 100%;
+    transition: all 1s;
+}
+
+input[type="search"] {
+    outline: none;
+    width: 120px;
+    height: 24px;
+    border-top: none;
+    border-bottom: 1px solid whitesmoke;
+    border-left: none;
+    border-right: none;
+    background-color: #080808;
+    color: whitesmoke;
+    padding: 4px 12px;
+}
+
+.first-mini {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+.mini-heading {
+    height: 50vh;
+    margin-top: 5rem;
+}
+
+.mini-heading div {
+    display: flex;
+}
+
+.mini-heading h1 {
+    font-size: 3rem;
+}
+
+:is(.mini-heading p, .mini-heading div) {
+    margin-top: 1rem;
+}
+
+.mini-heading p {
+    width: 60%;
+}
+
+ol li {
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+
+.mini-heading ol div {
+    margin: 0 8px;
+    width: 1px;
+    height: 80px;
+    border-radius: 50px;
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 4px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid whitesmoke;
+    outline: none;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: #fff;
+}
+
+.first-mini::before {
+    content: "";
+    background:
+        linear-gradient(-17deg, #030303, rgba(0, 0, 0, 0.7), rgba(71, 71, 71, 0.7)), url(/images/geran-de-klerk-qzgN45hseN0-unsplash.jpg) no-repeat center center / cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.hamburger .line {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 8px 12px;
+    border-radius: 50px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* ========= services section is here please be focus ============  */
+
+#services {
+    text-align: center;
+    margin: 2rem 0;
+
+}
+
+#services h1 {
+    font-size: 4rem;
+}
+
+.serivces-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.serivces-list div {
+    margin: 35px;
+    height: 400px;
+    width: 700px;
+    background-color: #262626;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    transition: all 0.4s;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.serivces-list div i {
+    font-size: 50px;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.serivces-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.serivces-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.serivces-list div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    border-radius: 8px;
+    box-shadow: 5px 6px 12px rgb(251 250 250 / 70%);
+
+}
+
+
+#business {
+    text-align: center;
+    position: relative;
+}
+
+#business h2 {
+    font-size: 2.8rem;
+    padding: 6px 0px;
+    margin: 4px 0px;
+
+}
+
+#business h4 {
+    font-size: 1em;
+}
+
+#business button {
+    padding: 8px 20px;
+    margin: 12px;
+    border: 1px solid #262626;
+    background-color: #262626;
+    border-radius: 4px;
+    color: whitesmoke;
+    transition: 1.5s;
+    cursor: pointer;
+    box-shadow: 0px 1px 8px rgb(251 250 250 / 70%);
+}
+
+#business button:hover {
+    border: 1px solid #262626;
+    background-color: whitesmoke;
+    color: #262626;
+    box-shadow: none;
+}
+
+#business h1 {
+    font-size: 4rem;
+    padding: 6px 4px;
+}
+
+#business::before {
+    content: "";
+    background:
+        linear-gradient(11deg, #030303, rgba(0, 0, 0, 0.7), rgba(71, 71, 71, 0.7)), url(/images/sergei-a--heLWtuAN3c-unsplash.jpg) no-repeat center center / cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*===================================== webinar ====================== */
+
+form {
+    margin-top: 4rem;
+    background-color: #262626;
+}
+
+.form p {
+    font-size: 1.2rem;
+}
+
+
+
+.class-form {
+    margin: auto;
+    text-align: center;
+    background-color: rgba(4, 4, 4, 0.9);
+}
+
+form input {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 4px;
+    border: none;
+    width: 420px;
+    outline: none;
+}
+
+
+
+form button {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 4px;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.9s;
+
+}
+
+form textarea {
+    padding: 12px 8px;
+    margin: 16px 8px;
+    border-radius: 4px;
+    width: 1300px;
+    height: 100px;
+    outline: none;
+}
+
+
+/*===================================== footer ====================== */
+.footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ol li {
+    list-style: none;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+#first_div i {
+    font-size: 10rem;
+}
+
+.first_div {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.first_div_mini {
+    margin: 0 2rem;
+    color: #e2dfdf;
+}
+
+footer {
+    padding: 0 1rem;
+}
+
+.footer .first_div .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.last {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 8px 0;
+}
+
+
+
+
+@media screen and (max-width:1325px) {
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .first-mini {
+        padding: 8px;
+    }
+
+    .mini-heading {
+        margin: 0%;
+    }
+
+    .mini-heading h1 {
+        font-size: 1rem;
+    }
+
+    .mini-heading p {
+        width: auto;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    input[type="search"] {
+        width: 80px;
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 4px;
+    }
+
+    .drop-down {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        margin: auto;
+        width: 0%;
+        text-align: center;
+        align-items: center;
+        background:
+            linear-gradient(11deg, #030303, rgba(0, 0, 0, 0.7), rgba(71, 71, 71, 0.7)), url(/images/sergei-a--heLWtuAN3c-unsplash.jpg) no-repeat center center / cover;
+        height: 57vh;
+        overflow: hidden;
+        transition: all 2s;
+        z-index: 1;
+    }
+
+    .drop-down.show {
+        width: 100%;
+        backdrop-filter: blur(2px);
+        box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    .serivces-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serivces-list div {
+        width: auto;
+        overflow: hidden;
+    }
+
+    form input {
+        width: auto;
+    }
+
+    form textarea {
+        width: auto;
+        height: 70px;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .last-div {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
